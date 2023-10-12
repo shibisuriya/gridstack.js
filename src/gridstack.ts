@@ -2263,7 +2263,8 @@ export class GridStack {
             el = el.cloneNode(true) as GridItemHTMLElement;
           }
         } else {
-          el.remove(); // reduce flicker as we change depth here, and size further down
+          el.style.display = 'none'
+          // el.remove(); // reduce flicker as we change depth here, and size further down
           this._removeDD(el);
         }
         if (!wasAdded) return false;
