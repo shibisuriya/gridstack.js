@@ -34,7 +34,7 @@
     "test": "yarn lint && karma start karma.conf.js",
     "lint": "tsc --noEmit && eslint src/*.ts",
     "reset": "rm -rf dist node_modules",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "pnpm run build"
   },
   "keywords": [
     "Typescript",
